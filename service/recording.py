@@ -16,7 +16,10 @@ class Recording:
             timeout: int = 10000
     ):
         i = 1
-        v = Videotape(timeout=timeout)
+        v = Videotape(
+            timeout=timeout,
+            rotation=90
+        )
         vc = VideoConverter()
         executor = ThreadPoolExecutor(max_workers=1)
         while True:
