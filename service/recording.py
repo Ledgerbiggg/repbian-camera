@@ -18,7 +18,6 @@ class Recording:
         i = 1
         v = Videotape(
             timeout=timeout,
-            rotation=90
         )
         vc = VideoConverter()
         executor = ThreadPoolExecutor(max_workers=1)
